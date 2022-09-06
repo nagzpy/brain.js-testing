@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src='index.js' defer></script>
+  <script defer>
+    fetch('https://api.eia.gov/v2/petroleum/pri/gnd/data/?api_key=1flXG0rP5oVwkm5xxNzQbhjrpqZmUytZuzUOsq4i')
+    .then((response) => {var html_head = document.getElementById('text').text = response})
+  </script>
 </head>
 <body>
   <h1 id='text'></h1>
